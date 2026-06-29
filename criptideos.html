@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptídeos e Bestas Urbanas - CrashWiki</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a2e; 
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #16213e;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            flex-wrap: wrap; 
+            gap: 15px;
+        }
+        
+        .nav-links {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            justify-content: center;
+        }
+
+        nav a {
+            color: hsl(261, 42%, 35%); 
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #12a125;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .search-container input {
+            padding: 8px 15px;
+            border: 2px solid hsl(261, 42%, 35%);
+            border-radius: 20px 0 0 20px; 
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+            outline: none;
+        }
+        
+        .search-container button {
+            padding: 8px 15px;
+            background-color: hsl(261, 42%, 35%);
+            border: 2px solid hsl(261, 42%, 35%);
+            border-radius: 0 20px 20px 0; 
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Estilos Específicos da Página da Categoria */
+        .category-header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #0f3460;
+            border-bottom: 3px solid #12a125;
+        }
+        
+        .category-header h1 {
+            color: #12a125;
+            font-size: 2.5em;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .creature-card {
+            background-color: #16213e;
+            border: 1px solid hsl(261, 42%, 35%);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            gap: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            flex-wrap: wrap;
+        }
+
+        .creature-image {
+            flex: 1;
+            min-width: 250px;
+            height: 250px;
+            background-color: #0f3460;
+            border-radius: 8px;
+            background-size: cover;
+            background-position: center;
+            border: 1px solid #1a1a2e;
+        }
+
+        .creature-info {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .creature-info h2 {
+            color: lab(44.23% 68.18 -58.68);
+            margin-top: 0;
+            border-bottom: 1px solid hsl(261, 42%, 35%);
+            padding-bottom: 10px;
+        }
+
+        footer {
+            background-color: #16213e;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #773d99;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-links">
+            <a href="inicio.html">Início</a>
+            <a href="novidades.html">Novidades</a>
+            <a href="regras.html">Regras</a>
+            <a href="videos.html">Vídeos</a>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Pesquisar na Wiki...">
+            <button type="button">🔍</button>
+        </div>
+    </nav>
+
+    <header class="category-header">
+        <h1>Criptídeos e Bestas Urbanas</h1>
+        <p>A ciência diz que eles não existem. As testemunhas dizem o contrário.</p>
+    </header>
+
+    <main class="container">
+        
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://static.wikia.nocookie.net/cryptidz/images/f/ff/Ahool.jpg/revision/latest/scale-to-width-down/250?cb=20090729220956);"></div>
+            <div class="creature-info">
+                <h2>Ahool</h2>
+                <p><strong>Origem:</strong> Indonésia (Selvas de Java).</p>
+                <p>Um morcego criptídeo de dimensões assustadoras, com o tamanho comparável a um pterodáctilo. É conhecido pelo seu grito alto e característico que soa exatamente como "a-hool", ecoando nas densas florestas tropicais.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://preview.redd.it/kyrgyzstans-hidden-giant-the-almasty-v0-3vredqcnzieg1.png?auto=webp&s=b2cb1f6935778ad2cff4c969b012181b6abc86df);"></div>
+            <div class="creature-info">
+                <h2>Alma</h2>
+                <p><strong>Origem:</strong> Mongólia e Cordilheira do Cáucaso.</p>
+                <p>Um hominídeo selvagem e esquivo. Testemunhas o descrevem como uma criatura extremamente parecida com os antigos Neandertais, vivendo de forma primitiva nas montanhas geladas e isoladas da Ásia Central.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsPabX0_1EsGZ7Olju9Ee7mQDW9YranSRVEH8Pa3eXQ3vLtUM97Hr6167O&s=10);"></div>
+            <div class="creature-info">
+                <h2>Besta de Bodmin Moor</h2>
+                <p><strong>Origem:</strong> Inglaterra (Cornualha).</p>
+                <p>Uma "grande pantera fantasma" que aterroriza os fazendeiros rurais. Com o desaparecimento e mutilação de diversos rebanhos locais nos anos 90, especialistas debatem se a fera é um felino exótico que escapou de zoológicos ou uma criatura sobrenatural.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0fZi49adM1IGcwbykKp00HNF0mDnHfupG0Q3mbQ9ix_KxY6Ki8e7ZEcY&s=10);"></div>
+            <div class="creature-info">
+                <h2>Besta de Bray Road</h2>
+                <p><strong>Origem:</strong> Estados Unidos (Wisconsin).</p>
+                <p>Uma criatura bípede imponente, coberta de pelos densos e com a fisionomia de um lobisomem. Ficou famosa por ser frequentemente avistada à beira de estradas rurais remotas, ajoelhada enquanto devora carcaças de outros animais.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/ac/Gevaudanwolf.jpg);"></div>
+            <div class="creature-info">
+                <h2>Besta de Gévaudan</h2>
+                <p><strong>Origem:</strong> França.</p>
+                <p>Um canídeo gigante e feroz que aterrorizou a província francesa no século XVIII. A lenda é baseada em registros históricos reais de centenas de ataques implacáveis, atribuídos a um lobo monstruoso ou até mesmo a um assassino em série usando pele de animais.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/ff/Bunyip_%281935%29.jpg);"></div>
+            <div class="creature-info">
+                <h2>Bunyip</h2>
+                <p><strong>Origem:</strong> Austrália.</p>
+                <p>Uma das criaturas mais temidas do folclore aborígene. Diz-se que essa besta bizarra se esconde nos pântanos, riachos e lagoas australianas, atraindo suas presas com um uivo aterrorizante na calada da noite.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://miro.medium.com/1*6DrG5TmoZ21QW8v9_1HhIw.jpeg);"></div>
+            <div class="creature-info">
+                <h2>Cão Negro (Black Shuck)</h2>
+                <p><strong>Origem:</strong> Inglaterra.</p>
+                <p>Um imenso cão demoníaco de pelagem escura e olhos flamejantes. Encontrar essa entidade nas estradas neblinosas britânicas é considerado, há séculos, um terrível presságio de morte iminente.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://i.pinimg.com/webp85/1200x/61/65/fc/6165fc4bf21e8b94d54255543ff25591.webp);"></div>
+            <div class="creature-info">
+                <h2>Chupacabra</h2>
+                <p><strong>Origem:</strong> Porto Rico e Américas.</p>
+                <p>O infame predador noturno de fazendas. Responsável por drenar o sangue de rebanhos inteiros, é descrito de diversas formas, desde um canídeo pálido sem pelos até um bípede reptiliano com espinhos dorsais.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://preview.redd.it/cryptid-jersey-devil-v0-pjm6ys8kaekf1.png?width=500&format=png&auto=webp&s=0c80fa97e471c191b8023513a2641149b53595bf);"></div>
+            <div class="creature-info">
+                <h2>Demônio de Jersey</h2>
+                <p><strong>Origem:</strong> Estados Unidos (Nova Jersey).</p>
+                <p>Diz a lenda que, no século XVIII, uma bruxa amaldiçoou seu décimo terceiro filho. Ele teria nascido com cabeça de cavalo, asas de morcego e cascos fendidos, passando a assombrar a extensa região dos Pine Barrens até hoje.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://static.wikia.nocookie.net/fantasia/images/c/c0/135105504_2732808050270121_1413347944063296340_n.jpg/revision/latest?cb=20220822170633&path-prefix=pt);"></div>
+            <div class="creature-info">
+                <h2>Dobhar-chú</h2>
+                <p><strong>Origem:</strong> Irlanda.</p>
+                <p>Conhecido como o "cão da água", é um híbrido monstruoso e cruel de lontra e cão. Altamente agressivo com os humanos, existem até mesmo lápides antigas na Irlanda que relatam mortes causadas por essa fera brutal.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://static.wikia.nocookie.net/naturerules1/images/a/a0/31_monsters_challenge_emela_ntouka_by_loneanimator_de7wzeh-250t.jpg/revision/latest?cb=20210602195317);"></div>
+            <div class="creature-info">
+                <h2>Emela-ntouka</h2>
+                <p><strong>Origem:</strong> República do Congo.</p>
+                <p>Traduzido como o "matador de elefantes". Um criptídeo formidável semelhante a um rinoceronte gigantesco ou dinossauro ceratopsídeo. Nativos afirmam que ele vive isolado na selva congolesa e ataca selvagemente qualquer grande animal.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://aventurasnahistoria.com.br/wp-content/uploads/curiosidades/goatman_2.jpg);"></div>
+            <div class="creature-info">
+                <h2>Homem-Bode (Goatman)</h2>
+                <p><strong>Origem:</strong> Estados Unidos (Maryland).</p>
+                <p>Uma aberração metade homem e metade bode empunhando um machado. Segundo as lendas urbanas, ele surgiu devido a um experimento de DNA que deu errado, caçando casais adolescentes em estradas desertas.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://miro.medium.com/1*e1m46dR1zvrnsOHQiYJK-g.jpeg);"></div>
+            <div class="creature-info">
+                <h2>Homem-Coruja (Owlman)</h2>
+                <p><strong>Origem:</strong> Inglaterra (Cornualha).</p>
+                <p>Uma entidade perturbadora descrita como um homem alado gigante, possuindo garras pontiagudas, penas escuras e o rosto pálido de uma coruja. Costuma ser visto empoleirado sobre cemitérios e igrejas abandonadas.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://preview.redd.it/the-lizard-man-of-scape-ore-swamp-is-my-favorite-cryptid-v0-r86mmfcb7ute1.jpeg?auto=webp&s=d16ba2825b9fea8834c9939200fd3be4e831d635);"></div>
+            <div class="creature-info">
+                <h2>Homem-Lagarto de Scape Ore</h2>
+                <p><strong>Origem:</strong> Estados Unidos (Carolina do Sul).</p>
+                <p>Um criptídeo reptiliano incrivelmente musculoso, bípede e de olhos injetados. Ficou infame após uma série de relatos envolvendo ataques furiosos contra os carros de motoristas perto de pântanos remotos.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://static.wikia.nocookie.net/monster/images/e/eb/Mothman.jpeg/revision/latest/thumbnail/width/360/height/360?cb=20200324161923);"></div>
+            <div class="creature-info">
+                <h2>Homem-Mariposa (Mothman)</h2>
+                <p><strong>Origem:</strong> Estados Unidos (Virgínia Ocidental).</p>
+                <p>Uma silhueta escura e formidável de quase dois metros de altura, dotada de asas largas e olhos vermelhos brilhantes no peito. É amplamente considerado um prenúncio sombrio, visto sempre nos dias que antecedem desastres.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTsvLFKJAuuYK2aUS3o6Nst-CS94SxpiwoYY6i61LtgA&s=10);"></div>
+            <div class="creature-info">
+                <h2>Homem-Sapo de Loveland</h2>
+                <p><strong>Origem:</strong> Estados Unidos (Ohio).</p>
+                <p>Pequenas criaturas anfíbias com feições de sapo e pele verde texturizada. O primeiro caso notório foi relatado por policiais, que garantiram ter visto o ser disparando faíscas estranhas de suas garras.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d9/Lepus_cornutus.jpg);"></div>
+            <div class="creature-info">
+                <h2>Jackalope</h2>
+                <p><strong>Origem:</strong> Estados Unidos (Oeste Selvagem).</p>
+                <p>Um ícone do folclore, caracterizado como uma lebre que possui densos chifres de antílope. Embora quase sempre tratado como mito, especula-se que a base visual venha de coelhos reais acometidos por vírus que criam queratina protuberante.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://static.wikia.nocookie.net/cryptidarchives/images/d/d0/Chipekwe_hoaxed_photograph.jpg/revision/latest?cb=20190126054559);"></div>
+            <div class="creature-info">
+                <h2>Kasai Rex</h2>
+                <p><strong>Origem:</strong> República Democrática do Congo.</p>
+                <p>Um suposto dinossauro predador bípede assemelhando-se intensamente a um Tiranossauro. Testemunhas no passado afirmaram tê-lo visto caçando e estraçalhando rinocerontes nas densas planícies africanas.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnVkRcdR3-tNYhyOXHhhkrlY7Ahiz_4rcO-Ht_9psNzHYSB5nm5YIUlf5P&s=10);"></div>
+            <div class="creature-info">
+                <h2>Kongamato</h2>
+                <p><strong>Origem:</strong> Zâmbia, Angola e Congo.</p>
+                <p>Seu nome significa "aquele que quebra barcos". Uma gigantesca criatura voadora que se assemelha mais a um pterossauro encouraçado, temida pelas tribos locais devido à ferocidade com que tomba pescadores no rio.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://preview.redd.it/alleged-photos-of-a-skunk-ape-taken-in-sarasota-fl-2000-v0-rokw6lbz7wt81.jpg?width=640&crop=smart&auto=webp&s=89955e9410ed13ddd4572d1913d9872c8aa8101a);"></div>
+            <div class="creature-info">
+                <h2>Macaco-Gambá (Skunk Ape)</h2>
+                <p><strong>Origem:</strong> Estados Unidos (Flórida).</p>
+                <p>Parente distante e pantanoso do Pé-Grande. Destaca-se por ser um primata avermelhado e incrivelmente hostil, mas sua característica mais infame é exalar uma névoa de odor pungente, parecendo lixo em decomposição.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://portalconteudoaberto.com.br/wp-content/uploads/2023/08/maxresdefault.jpg);"></div>
+            <div class="creature-info">
+                <h2>Mapinguari</h2>
+                <p><strong>Origem:</strong> Brasil (Amazônia).</p>
+                <p>Um gigante folclórico frequentemente descrito como um monstro implacável, com um olho singular, pele espessa e, nas versões mais assustadoras, uma segunda boca repleta de dentes no abdômen. Pode ser inspirado nas preguiças-gigantes.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSttBp6dduqAzmSIqhnxzTSpV3pgo0R439G7fTt_ZQ_uBltAMt3dr2H_uz3&s=10);"></div>
+            <div class="creature-info">
+                <h2>Mokele-mbembe</h2>
+                <p><strong>Origem:</strong> República do Congo.</p>
+                <p>Um criptídeo famoso focado na sobrevivência jurássica. Um herbívoro aquático gigantesco, portando um pescoço esbelto e cauda proeminente, lembrando o físico de um Apatossauro, protegido ferozmente pelos lagos ocultos.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://i0.wp.com/www.werewolves.com/wordpress/wp-content/uploads/2016/07/fouke_monster.png?fit=600%2C334&ssl=1);"></div>
+            <div class="creature-info">
+                <h2>Monstro de Fouke</h2>
+                <p><strong>Origem:</strong> Estados Unidos (Arkansas).</p>
+                <p>Um grandioso símio bípede que assediou cruelmente a pacata comunidade de Fouke durante a década de 1970, matando animais de estimação e invadindo propriedades rurais (inspirando o filme "The Legend of Boggy Creek").</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://connectparanormal.net/wp-content/uploads/2026/02/download-62.jpg);"></div>
+            <div class="creature-info">
+                <h2>Nightcrawler de Fresno</h2>
+                <p><strong>Origem:</strong> Estados Unidos (Califórnia).</p>
+                <p>Uma bizarra entidade capturada em inúmeras câmeras noturnas. Sem tronco e sem braços, ele consiste apenas em duas pernas esbranquiçadas, caminhando lenta e graciosamente como um ser saído de outra dimensão.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://i.pinimg.com/1200x/ed/48/84/ed4884c111a40720bcea03e2df41f3b5.jpg);"></div>
+            <div class="creature-info">
+                <h2>Pé-Grande (Sasquatch)</h2>
+                <p><strong>Origem:</strong> América do Norte.</p>
+                <p>A joia da coroa da criptozoologia. Um enorme primata selvagem arisco aos humanos. Sua lenda subsiste apoiada em milhares de avistamentos anuais, amostras de pelos e imensas pegadas cravadas no barro.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://static.wikia.nocookie.net/monster/images/f/f6/Ropen.jpg/revision/latest?cb=20170520072146);"></div>
+            <div class="creature-info">
+                <h2>Ropen</h2>
+                <p><strong>Origem:</strong> Papua-Nova Guiné.</p>
+                <p>Um réptil voador noturno de cauda longa dotado da incrível capacidade biológica de emitir bioluminescência. Relatos obscuros sugerem que esse terror celeste vasculha funerais remotos para se alimentar.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://static.wikia.nocookie.net/deadliestfiction/images/5/56/Tatzelwurm.jpg/revision/latest/scale-to-width/360?cb=20130112050944);"></div>
+            <div class="creature-info">
+                <h2>Tatzelwurm</h2>
+                <p><strong>Origem:</strong> Alpes Europeus.</p>
+                <p>Uma criatura descrita como um cruzamento estranho entre uma espessa serpente e um felino robusto. Esconde-se nos complexos túneis rochosos e nevoeiros alpinos, e diz a lenda que ele tem a capacidade de cuspir gás venenoso.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://static.wikia.nocookie.net/cryptidz/images/b/bb/Nandi.jpg/revision/latest?cb=20131227234046);"></div>
+            <div class="creature-info">
+                <h2>Urso Nandi</h2>
+                <p><strong>Origem:</strong> Quênia.</p>
+                <p>Uma anomalia bizarra, considerando que a África não tem ursos nativos. Esta fera ágil e letal tem pelagem marrom e uma ferocidade insaciável, sendo lembrada nos contos ancestrais por atacar impiedosamente nas sombras.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b6/Allghoikhorkhoi.jpg);"></div>
+            <div class="creature-info">
+                <h2>Verme da Morte da Mongólia (Olgoi-Khorkhoi)</h2>
+                <p><strong>Origem:</strong> Mongólia.</p>
+                <p>Um gigante invertebrado vermelho semelhante a um imenso intestino rastejante sob as áridas areias do Deserto de Gobi. Acredita-se que ele pode eliminar adversários atirando jatos de toxina ou gerando choques elétricos.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://i.pinimg.com/736x/41/99/b8/4199b8e62987d15ceee59c0e4c5c99d1.jpg);"></div>
+            <div class="creature-info">
+                <h2>Yeti (Abominável Homem das Neves)</h2>
+                <p><strong>Origem:</strong> Cordilheira do Himalaia (Tibete e Nepal).</p>
+                <p>A contraparte polar do Sasquatch. É um grandioso hominídeo adaptado biologicamente ao frio extremo das montanhas mais inóspitas da Ásia, reverenciado sagradamente por lendas milenares monges.</p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - O Códice do Inexplicável. A verdade está aqui dentro.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.querySelector('.search-container input');
+            const searchButton = document.querySelector('.search-container button');
+            const cards = document.querySelectorAll('.creature-card');
+
+            function realizarPesquisa() {
+                const termo = searchInput.value.toLowerCase();
+                
+                cards.forEach(card => {
+                    // Pega todo o texto do cartão (nome, origem e descrição)
+                    const textoCartao = card.querySelector('.creature-info').textContent.toLowerCase();
+                    
+                    // Se o texto incluir o termo pesquisado, mostra o cartão, senão, esconde
+                    if (textoCartao.includes(termo)) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            // Pesquisa ao clicar no botão da lupa
+            searchButton.addEventListener('click', realizarPesquisa);
+
+            // Pesquisa em tempo real enquanto o usuário digita
+            searchInput.addEventListener('keyup', realizarPesquisa);
+        });
+    </script>
+
+
+</body>
+</html>

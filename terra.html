@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Povo da Terra - CrashWiki</title>
+    <style>
+        /* Estilos básicos unificados padrão da CrashWiki */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a2e; 
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #16213e;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            flex-wrap: wrap; 
+            gap: 15px;
+        }
+        
+        .nav-links {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            justify-content: center;
+        }
+
+        nav a {
+            color: hsl(261, 42%, 35%); 
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #12a125;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .search-container input {
+            padding: 8px 15px;
+            border: 2px solid hsl(261, 42%, 35%);
+            border-radius: 20px 0 0 20px; 
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+            outline: none;
+        }
+        
+        .search-container button {
+            padding: 8px 15px;
+            background-color: hsl(261, 42%, 35%);
+            border: 2px solid hsl(261, 42%, 35%);
+            border-radius: 0 20px 20px 0; 
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Estilos da Categoria */
+        .category-header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #0f3460;
+            border-bottom: 3px solid #12a125;
+        }
+        
+        .category-header h1 {
+            color: #12a125;
+            font-size: 2.5em;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .creature-card {
+            background-color: #16213e;
+            border: 1px solid hsl(261, 42%, 35%);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            gap: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            flex-wrap: wrap;
+        }
+
+        .creature-image {
+            flex: 1;
+            min-width: 250px;
+            height: 250px;
+            background-color: #0f3460;
+            border-radius: 8px;
+            background-size: cover;
+            background-position: center;
+            border: 1px solid #1a1a2e;
+        }
+
+        .creature-info {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .creature-info h2 {
+            color: lab(44.23% 68.18 -58.68);
+            margin-top: 0;
+            border-bottom: 1px solid hsl(261, 42%, 35%);
+            padding-bottom: 10px;
+        }
+
+        footer {
+            background-color: #16213e;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #773d99;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-links">
+            <a href="inicio.html">Início</a>
+            <a href="novidades.html">Novidades</a>
+            <a href="regras.html">Regras</a>
+            <a href="videos.html">Vídeos</a>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Pesquisar na Wiki...">
+            <button type="button">🔍</button>
+        </div>
+    </nav>
+
+    <header class="category-header">
+        <h1>O Povo da Terra</h1>
+        <p>Protetores das florestas, guardiões de cavernas e raças que habitam as entranhas do mundo físico.</p>
+    </header>
+
+    <main class="container">
+        
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjur5fQiSR8h9C1zhsemKu0JHyQYiTQkAxnCw9Vqvf-OAlNGfV0GucLalZtO5s);"></div>
+            <div class="creature-info">
+                <h2>Alux</h2>
+                <p><strong>Origem:</strong> América Central (Mitologia Maia).</p>
+                <p>Espíritos pequenos e extremamente ágeis que habitam as florestas e campos de cultivo. Os agricultores costumam construir pequenas casas de pedra para eles em troca de proteção para as colheitas contra pragas e ladrões.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjEPJTJ523YSdMVjwSp52ByP5x_SJfY3Q2yUG1kqM58inqj0yi9NlWLdEhFg7bvRt7n29acM_FAl3edyLHTglP7UwqxVujmr82g-D8Ugz3z-rn86MZ_0XyvCu5gNUDrnLV147fZxGMI1pv/s320/brownie.jpg);"></div>
+            <div class="creature-info">
+                <h2>Brownie</h2>
+                <p><strong>Origem:</strong> Escócia e Inglaterra.</p>
+                <p>Criaturas domésticas pequenas e benevolentes. Eles entram nas residências humanas à noite para realizar tarefas pendentes, como limpar e cozinhar, exigindo apenas uma tigela de leite fresco como agradecimento.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_eed26mh8X44Z8MG0AToA8KzDHrpiwXe8NVVhP2ilpVJQspTOEDQg6PrKsfuF);"></div>
+            <div class="creature-info">
+                <h2>Caipora</h2>
+                <p><strong>Origem:</strong> Brasil.</p>
+                <p>Uma poderosa entidade indígena das matas, representada frequentemente como um jovem de cabelos vermelhos que cavalga um grande porco-do-mato. Age como uma defensora implacável dos animais contra caçadores cruéis.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://static.wikia.nocookie.net/mythology/images/b/b7/Chaneque.jpg/revision/latest/thumbnail/width/360/height/450?cb=20191023072417);"></div>
+            <div class="creature-info">
+                <h2>Chaneque</h2>
+                <p><strong>Origem:</strong> México.</p>
+                <p>Espíritos da terra e do solo na mitologia asteca. Eles guardam os recursos das florestas e são conhecidos por assustar ou desorientar intrusos que destroem a natureza, fazendo-os perder completamente o rumo.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLQ7c8F3IEytAAS1uy-P4sFxf7mZpwFGKwo26gFRkA7QOot3I9jl1hvynUPb_c);"></div>
+            <div class="creature-info">
+                <h2>Clurichaun</h2>
+                <p><strong>Origem:</strong> Irlanda.</p>
+                <p>Primos próximos dos Leprechauns, essas pequenas criaturas terrestres são os guardiões das adegas. Adoram consumir bebidas finas, mas protegem com vigor o estoque da casa se forem bem tratados.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://segredosdomundo.r7.com/wp-content/uploads/2020/10/lenda-do-curupira-origem-principais-versoes-e-adaptacoes-regionais.jpg);"></div>
+            <div class="creature-info">
+                <h2>Curupira</h2>
+                <p><strong>Origem:</strong> Brasil.</p>
+                <p>Um dos mais famosos defensores da fauna e da flora brasileiras. Possui cabelos de fogo e os pés virados para trás, o que cria pegadas invertidas no chão para confundir e despistar lenhadores e caçadores.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Lutin_by_godo.jpg/250px-Lutin_by_godo.jpg?utm_source=pt.wiktionary.org&utm_campaign=parser&utm_content=thumbnail);"></div>
+            <div class="creature-info">
+                <h2>Duende</h2>
+                <p><strong>Origem:</strong> Península Ibérica e América Latina.</p>
+                <p>Pequenos seres da terra que habitam a natureza profunda ou se escondem em residências humanas. São extremamente travessos, famosos por pregar peças e mudar objetos de lugar.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://i.pinimg.com/webp85/736x/cb/84/f4/cb84f4dfa6e29375eaa3f40d794ab3aa.webp);"></div>
+            <div class="creature-info">
+                <h2>Elfo</h2>
+                <p><strong>Origem:</strong> Mitologia Nórdica e Germânica.</p>
+                <p>Seres de longa vida intimamente ligados às florestas e fontes sagradas. Possuem grande conexão com as plantas, sabedoria milenar e habilidades mágicas baseadas nos elementos naturais.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://m.media-amazon.com/images/I/71Z5AWajI6L._AC_UF894,1000_QL80_.jpg);"></div>
+            <div class="creature-info">
+                <h2>Gárgula</h2>
+                <p><strong>Origem:</strong> Europa Medieval.</p>
+                <p>Criaturas esculpidas em pedra nas fachadas de castelos e catedrais. Segundo as lendas, ganham vida durante as noites mais escuras para patrulhar os céus e afastar forças malévolas da terra.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://i.pinimg.com/736x/2c/7b/03/2c7b038e8ed7332f85297239fddaf24e.jpg);"></div>
+            <div class="creature-info">
+                <h2>Gnomo</h2>
+                <p><strong>Origem:</strong> Folclore Europeu.</p>
+                <p>Pequenos humanoides que vivem no interior do solo, em cavernas ou sob as raízes de árvores gigantescas. São considerados os grandes guardiões dos tesouros minerais e das pedras preciosas da Terra.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://i.pinimg.com/1200x/52/c1/4e/52c14eba42ec65a400251716894fd98e.jpg);"></div>
+            <div class="creature-info">
+                <h2>Goblin</h2>
+                <p><strong>Origem:</strong> Folclore Britânico.</p>
+                <p>Criaturas pequenas de aparência grotesca e orelhas pontudas. Habitam grutas escuras e fendas na rocha, agindo de forma maliciosa e acumulando objetos brilhantes roubados de humanos.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://i0.wp.com/geekpopnews.com.br/wp-content/uploads/2025/11/gremlins-3-e-anunciado-pela-warner-bros.jpg?resize=1200%2C640&ssl=1);"></div>
+            <div class="creature-info">
+                <h2>Gremlin</h2>
+                <p><strong>Origem:</strong> Folclore Moderno (Reino Unido).</p>
+                <p>Pequenas criaturas da terra que ganharam fama no século XX. São fascinados por mecânica, engenharia e ferramentas, divertindo-se ao sabotar engrenagens e motores para ver como funcionam.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://i.pinimg.com/736x/cf/7f/42/cf7f4272fecfe9c047aaf84a9fb57d24.jpg);"></div>
+            <div class="creature-info">
+                <h2>Hobgoblin</h2>
+                <p><strong>Origem:</strong> Folclore Inglês.</p>
+                <p>Uma variação maior, mais robusta e pacífica dos goblins tradicionais. Em vez de causarem destruição, preferem conviver perto de vilas agrícolas, ajudando secretamente em troca de pequenas oferendas.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYR7deZ7VDP9pcG0qo5jgblsLRocN7s5vw-Uwx-tCZSXVyGj90E-rk71AzAQj4);"></div>
+            <div class="creature-info">
+                <h2>Jotunn</h2>
+                <p><strong>Origem:</strong> Mitologia Nórdica.</p>
+                <p>Os gigantes ancestrais da rocha, terra e gelo. Habitam o reino montanhoso de Jotunheim e representam as forças brutas, colossais e indomáveis do relevo terrestre.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://i.pinimg.com/736x/7d/04/1e/7d041efa0a8da60a3f17dfeca09c9362.jpg);"></div>
+            <div class="creature-info">
+                <h2>Knocker</h2>
+                <p><strong>Origem:</strong> Cornualha e País de Gales.</p>
+                <p>Espíritos subterrâneos que habitam minas profundas. Ganharam esse nome porque batem nas paredes de rocha para alertar os mineiros sobre desabamentos iminentes ou indicar ricos veios de metal.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://i.pinimg.com/736x/ee/06/b4/ee06b4b00511f2ec0506e562d9439d26.jpg);"></div>
+            <div class="creature-info">
+                <h2>Kobold</h2>
+                <p><strong>Origem:</strong> Alemanha.</p>
+                <p>Espíritos que podem viver tanto em minas subterrâneas quanto em porões e fundações de casas. São exímios mineradores e ferreiros rústicos ligados à geologia.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://i.pinimg.com/736x/bc/23/e2/bc23e29eb5d3f523361f8e5cb4e3839f.jpg);"></div>
+            <div class="creature-info">
+                <h2>Koropokkuru</h2>
+                <p><strong>Origem:</strong> Japão (Folclore Ainu).</p>
+                <p>Um povo antigo de tamanho diminuto que habita o subsolo e os chãos das florestas do norte. Vivem debaixo de folhas gigantescas de plantas silvestres e são extremamente tímidos.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://i.pinimg.com/1200x/d4/d2/6a/d4d26aad0a7476ead88e0871095abcd6.jpg);"></div>
+            <div class="creature-info">
+                <h2>Leprechaun</h2>
+                <p><strong>Origem:</strong> Irlanda.</p>
+                <p>Criaturas diminutas da terra conhecidas como os sapateiros do mundo feérico. Acumulam suas moedas de ouro em potes escondidos no solo e usam de astúcia para enganar humanos gananciosos.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://www.lrarcano.com/wp-content/uploads/2023/11/f82e341f8474348f5dbbeb429ed018be.jpg.webp);"></div>
+            <div class="creature-info">
+                <h2>Leshy</h2>
+                <p><strong>Origem:</strong> Mitologia Eslava.</p>
+                <p>O espírito soberano das grandes matas. Ele consegue alterar seu tamanho biológico à vontade, ficando tão alto quanto uma árvore secular ou tão pequeno quanto uma folha de grama para patrulhar seu território.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://static.wikia.nocookie.net/fantasia/images/3/36/Mapin.jpg/revision/latest?cb=20080307172139&path-prefix=pt);"></div>
+            <div class="creature-info">
+                <h2>Mapinguari</h2>
+                <p><strong>Origem:</strong> Brasil (Região Amazônica).</p>
+                <p>Uma criatura colossal e peluda com um olho na testa e uma enorme boca na barriga. Anda pelas densas profundezas da floresta quebrando galhos e afugentando aqueles que ameaçam a mata.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://www.worldhistory.org/img/c/p/1600x900/16303.jpg);"></div>
+            <div class="creature-info">
+                <h2>Menehune</h2>
+                <p><strong>Origem:</strong> Havaí.</p>
+                <p>Um antigo povo lendário de artesãos pigmeus que vive em vales profundos de terra firme. São famosos por construir estradas, templos e canais de pedra complexos em uma única noite.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipI5sQKx7x_88eDGzfagnAeaRE7UOKvyZPBVbyBEgLh3jHwPv1ikDcqtnBHxb7m2UPNhPdlPanvL5pRjwNrP46InA_ep1JCA1MqVONxR4cu4_yj8E2NGfW4aRImA2FU_MXxmoLxiC344o/s280/DUENDE.jpg);"></div>
+            <div class="creature-info">
+                <h2>Nisse</h2>
+                <p><strong>Origem:</strong> Escandinávia.</p>
+                <p>Também conhecido como Tomte, é um espírito da terra com aparência de idoso anão que protege propriedades rurais. Zela pelos animais da fazenda, mas pune severamente os donos preguiçosos.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://static.educalingo.com/img/pt/800/ogro.jpg);"></div>
+            <div class="creature-info">
+                <h2>Ogro</h2>
+                <p><strong>Origem:</strong> Folclore Europeu.</p>
+                <p>Humanoides corpulentos e gigantescos, dotados de força bruta avassaladora. Habitam pântanos terrestres, vales isolados e cavernas profundas, sendo temidos por sua grande agressividade.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://segredosdomundo.r7.com/wp-content/uploads/2022/03/a-origem-dos-orcs-das-lendas-medievais.jpg);"></div>
+            <div class="creature-info">
+                <h2>Orc</h2>
+                <p><strong>Origem:</strong> Mitologia Germânica e Contos Medievais.</p>
+                <p>Criaturas corpulentas, robustas e guerreiras que constroem fortalezas subterrâneas e acampamentos em regiões montanhosas. Vivem em grandes clãs tribais baseados na lei da força física.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://i.pinimg.com/736x/1e/3d/e0/1e3de02fa4ecb05fec703fd034f58b5d.jpg);"></div>
+            <div class="creature-info">
+                <h2>Pixie</h2>
+                <p><strong>Origem:</strong> Inglaterra (Cornualha).</p>
+                <p>Pequenas fadas sem asas que habitam colinas verdejantes e túmulos antigos de pedra. Adoram dançar na terra sob a luz do luar e criar caminhos falsos para desorientar andarilhos.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(data:image/jpeg;base64,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);"></div>
+            <div class="creature-info">
+                <h2>Pwca</h2>
+                <p><strong>Origem:</strong> País de Gales.</p>
+                <p>Um espírito terrestre metamorfo ligado às matas. Pode assumir a forma de cavalos ou cabras de pelagem escura, pregando peças elaboradas em camponeses que andam pelas estradas à noite.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd8-SSbbCjqdpIyIzNX4c5uWtHThoAUoGVtSbIN2E2R8eZwQ0-W0iD5iFKhTY86SBB4Ko4FuVZxmjZj6Pw-9b13zBQ3jZoWWoMawycuhk3bruy9rFIBIb2S1aQQoV7g-29tDJ4Ovgrqlk/s640/redcap_by_ravenscar45-d4zymjq.jpg);"></div>
+            <div class="creature-info">
+                <h2>Redcap</h2>
+                <p><strong>Origem:</strong> Fronteira Escócia-Inglaterra.</p>
+                <p>Um tipo de goblin territorialista e muito agressivo que habita ruínas de castelos de pedra. Ele guarda tesouros enterrados no solo e afugenta qualquer um que tente invadir seu refúgio.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/40/Spriggan_sculpture_by_Marilyn_Collins%2C_Parkland_Walk%2C_Haringey.jpg);"></div>
+            <div class="creature-info">
+                <h2>Spriggan</h2>
+                <p><strong>Origem:</strong> Cornualha.</p>
+                <p>Espíritos com corpos feitos de terra e rochas enrugadas que agem como guardas de tesouros antigos. Embora pequenos no estado normal, podem inflar seus corpos até tamanhos colossais.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c7/John_Bauer_1915.jpg);"></div>
+            <div class="creature-info">
+                <h2>Troll</h2>
+                <p><strong>Origem:</strong> Escandinávia.</p>
+                <p>Criaturas maciças que habitam montanhas isoladas e cavernas de rocha. Possuem uma ligação tão forte com os minerais da terra que se transformam inteiramente em pedra se forem atingidos pela luz do sol.</p>
+            </div>
+        </article>
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - O Códice do Inexplicável. A verdade está aqui dentro.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.querySelector('.search-container input');
+            const searchButton = document.querySelector('.search-container button');
+            const cards = document.querySelectorAll('.creature-card');
+
+            function realizarPesquisa() {
+                const termo = searchInput.value.toLowerCase();
+                
+                cards.forEach(card => {
+                    // Pega todo o texto do cartão (nome, origem e descrição)
+                    const textoCartao = card.querySelector('.creature-info').textContent.toLowerCase();
+                    
+                    // Se o texto incluir o termo pesquisado, mostra o cartão, senão, esconde
+                    if (textoCartao.includes(termo)) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            // Pesquisa ao clicar no botão da lupa
+            searchButton.addEventListener('click', realizarPesquisa);
+
+            // Pesquisa em tempo real enquanto o usuário digita
+            searchInput.addEventListener('keyup', realizarPesquisa);
+        });
+    </script>
+
+</body>
+</html>

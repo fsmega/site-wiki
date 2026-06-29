@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extraterrestres - CrashWiki</title>
+    <style>
+        /* Estilos básicos para manter o padrão das outras páginas */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a2e; 
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #16213e;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            flex-wrap: wrap; 
+            gap: 15px;
+        }
+        
+        .nav-links {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            justify-content: center;
+        }
+
+        nav a {
+            color: hsl(261, 42%, 35%); 
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #12a125;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .search-container input {
+            padding: 8px 15px;
+            border: 2px solid hsl(261, 42%, 35%);
+            border-radius: 20px 0 0 20px; 
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+            outline: none;
+        }
+        
+        .search-container button {
+            padding: 8px 15px;
+            background-color: hsl(261, 42%, 35%);
+            border: 2px solid hsl(261, 42%, 35%);
+            border-radius: 0 20px 20px 0; 
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Estilos da Categoria */
+        .category-header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #0f3460;
+            border-bottom: 3px solid #12a125;
+        }
+        
+        .category-header h1 {
+            color: #12a125;
+            font-size: 2.5em;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .creature-card {
+            background-color: #16213e;
+            border: 1px solid hsl(261, 42%, 35%);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            gap: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            flex-wrap: wrap;
+        }
+
+        .creature-image {
+            flex: 1;
+            min-width: 250px;
+            height: 250px;
+            background-color: #0f3460;
+            border-radius: 8px;
+            background-size: cover;
+            background-position: center;
+            border: 1px solid #1a1a2e;
+        }
+
+        .creature-info {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .creature-info h2 {
+            color: lab(44.23% 68.18 -58.68);
+            margin-top: 0;
+            border-bottom: 1px solid hsl(261, 42%, 35%);
+            padding-bottom: 10px;
+        }
+
+        footer {
+            background-color: #16213e;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #773d99;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-links">
+            <a href="inicio.html">Início</a>
+            <a href="novidades.html">Novidades</a>
+            <a href="regras.html">Regras</a>
+            <a href="videos.html">Vídeos</a>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Pesquisar na Wiki...">
+            <button type="button">🔍</button>
+        </div>
+    </nav>
+
+    <header class="category-header">
+        <h1>Extraterrestres</h1>
+        <p>Eles estão nos observando. Arquivos secretos, visitantes intergalácticos e casos de abdução.</p>
+    </header>
+
+    <main class="container">
+        
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaNy4SodkBwhrugoAeiDwhcRFlMHlmzyra0K1zyCrcAErfwh6Wnh1ATzk5-u0F);"></div>
+            <div class="creature-info">
+                <h2>Andromedanos</h2>
+                <p><strong>Origem:</strong> Galáxia de Andrômeda.</p>
+                <p>Seres altamente evoluídos, frequentemente descritos como seres de luz ou humanoides de pele azulada. Eles visitam a Terra para ajudar no despertar espiritual da humanidade.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRz4rS_JkrpQJiSA7zel0p7mffiTQy0AD0ZxYn4rgBvLWWxEr3L_MAf9alnSz3y);"></div>
+            <div class="creature-info">
+                <h2>Anunnaki</h2>
+                <p><strong>Origem:</strong> Planeta Nibiru (Mitologia Suméria).</p>
+                <p>Antigos "deuses" astronautas que teriam descido à Terra na antiguidade para minerar ouro, criando a humanidade através de engenharia genética para servir como trabalhadores.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4VgR6tjfaajNKl9-TKYIWvKV4mvHdhrl1oDGR3C-h1vN6uMC4lIECpDHfnZRk);"></div>
+            <div class="creature-info">
+                <h2>Arcturianos</h2>
+                <p><strong>Origem:</strong> Sistema Estelar de Arcturus.</p>
+                <p>Considerados uma das raças alienígenas mais avançadas da galáxia. Possuem pele esverdeada ou azulada, grandes olhos amendoados e se comunicam inteiramente por telepatia.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_sUMnLWfISQiVy6odiYTIDx9dRs8rTOjuJ_tJG348YAK50yH6IZEtxsHsuaOo);"></div>
+            <div class="creature-info">
+                <h2>Ashtar Sheran</h2>
+                <p><strong>Origem:</strong> Comando Ashtar (Federação Galáctica).</p>
+                <p>Uma figura icônica na ufologia mística. Diz-se que ele é o comandante de uma frota de naves espaciais dedicada a proteger a Terra de ameaças intergalácticas.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTs1uMiWNj3_p5Lhj8DRWUQw6Xp0ebXfyE6GNNejGxKP7Yng8b2zwtbmciJxH1y);"></div>
+            <div class="creature-info">
+                <h2>Cinzentos (Greys)</h2>
+                <p><strong>Origem:</strong> Desconhecida / Zeta Reticuli.</p>
+                <p>O clássico alienígena da cultura pop. Baixos, sem pelos, pele cinza, cabeças enormes e olhos negros profundos. São os maiores responsáveis por relatos de abduções.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://static.wikia.nocookie.net/indahrill/images/f/f6/Draconiano.jpg/revision/latest/scale-to-width-down/1200?cb=20210517115746);"></div>
+            <div class="creature-info">
+                <h2>Draconianos</h2>
+                <p><strong>Origem:</strong> Constelação de Draco.</p>
+                <p>A elite guerreira dos Reptilianos. Seres gigantescos e alados, extremamente imponentes e descritos como uma força imperialista dominante no universo.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPlpJMWq0goAxvr_PdobhckbMtkAo39gqwFeFVkPeO7h2uJyikMxPIhFE8EIOW);"></div>
+            <div class="creature-info">
+                <h2>Duendes de Hopkinsville</h2>
+                <p><strong>Origem:</strong> Kentucky, EUA (Incidente de 1955).</p>
+                <p>Criaturas metálicas e brilhantes com orelhas pontudas que aterrorizaram uma fazenda nos EUA, sobrevivendo a tiros de espingarda sem sofrer danos.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPCqwpDu7LQuRlVVpRABM3fjHu626ZxR8lmzSvX8D_uKFdnIdYbEEsggFs_82U);"></div>
+            <div class="creature-info">
+                <h2>Essassani</h2>
+                <p><strong>Origem:</strong> Sistema Estelar (Híbridos).</p>
+                <p>Uma raça benevolente que seria o resultado do cruzamento genético entre humanos terrestres e os Greys, criada para salvar a linhagem alienígena da extinção.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ9avIxRfTHLJU-YfybpqDoHm5Zjk-iEI3MHiG1tBPrrfGixMe050xSLLbC3ob);"></div>
+            <div class="creature-info">
+                <h2>Felinos (Orion)</h2>
+                <p><strong>Origem:</strong> Constelação de Orion / Sistema de Sirius.</p>
+                <p>Uma raça muito antiga de seres humanoides com características de grandes felinos. São sábios construtores de universos e mestres da genética.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrOl93IeEfaQGwwe3mabTfokI__pEwRwzPXfrIbPb9Iz-E8e_IFw8eDPYioNlQ);"></div>
+            <div class="creature-info">
+                <h2>Humanoides de Varginha</h2>
+                <p><strong>Origem:</strong> Varginha, Brasil (1996).</p>
+                <p>Criaturas baixas, com pele marrom oleosa, olhos vermelhos e três protuberâncias na cabeça. Encontrados após a suposta queda de uma nave em Minas Gerais.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxd4-Cgt3SVP-91PL30ywRD3JjkLVcBN8nFjhLNWYyQcGrdlqceOR-IhHzwESa);"></div>
+            <div class="creature-info">
+                <h2>Insetoides</h2>
+                <p><strong>Origem:</strong> Espaço Profundo.</p>
+                <p>Alienígenas que se assemelham a insetos gigantes, como o louva-a-deus. Parecem supervisionar outros seres durante encontros imediatos de terceiro grau.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgJ80p-X2neyDLxQSNdkvaKEghFq2Gd5h8am5BJoZcQCvhGL1kVCvl1c8fv6Q6);"></div>
+            <div class="creature-info">
+                <h2>Lyrianos</h2>
+                <p><strong>Origem:</strong> Constelação de Lyra.</p>
+                <p>Considerados os ancestrais de todas as raças humanoides da nossa galáxia. Eram viajantes espaciais pioneiros que colonizaram vários mundos antes da Terra.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(data:image/jpeg;base64,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);"></div>
+            <div class="creature-info">
+                <h2>Monstro de Flatwoods</h2>
+                <p><strong>Origem:</strong> West Virginia, EUA (1952).</p>
+                <p>Uma criatura bizarra de 3 metros de altura, com rosto vermelho brilhante e um corpo que parecia usar uma armadura ou vestido metálico em formato de sino.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRky7n8r3VST6TzCOqx3da_RZGpzJSTav1BB1prcqYAwb3Qw4S0wq5HQfdJBwA_);"></div>
+            <div class="creature-info">
+                <h2>Sirianos</h2>
+                <p><strong>Origem:</strong> Sistema de Sirius.</p>
+                <p>Seres profundamente ligados à água e à natureza. Acredita-se que eles ajudaram a construir as bases das antigas civilizações egípcias e maias.</p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - O Códice do Inexplicável. A verdade está aqui dentro.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.querySelector('.search-container input');
+            const searchButton = document.querySelector('.search-container button');
+            const cards = document.querySelectorAll('.creature-card');
+
+            function realizarPesquisa() {
+                const termo = searchInput.value.toLowerCase();
+                
+                cards.forEach(card => {
+                    // Pega todo o texto do cartão (nome, origem e descrição)
+                    const textoCartao = card.querySelector('.creature-info').textContent.toLowerCase();
+                    
+                    // Se o texto incluir o termo pesquisado, mostra o cartão, senão, esconde
+                    if (textoCartao.includes(termo)) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            // Pesquisa ao clicar no botão da lupa
+            searchButton.addEventListener('click', realizarPesquisa);
+
+            // Pesquisa em tempo real enquanto o usuário digita
+            searchInput.addEventListener('keyup', realizarPesquisa);
+        });
+    </script>
+
+</body>
+</html>

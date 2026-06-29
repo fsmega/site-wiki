@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entidades Etéreas - CrashWiki</title>
+    <style>
+        /* Estilos básicos unificados */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a2e; 
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #16213e;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            flex-wrap: wrap; 
+            gap: 15px;
+        }
+        
+        .nav-links {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            justify-content: center;
+        }
+
+        nav a {
+            color: hsl(261, 42%, 35%); 
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #12a125;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .search-container input {
+            padding: 8px 15px;
+            border: 2px solid hsl(261, 42%, 35%);
+            border-radius: 20px 0 0 20px; 
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+            outline: none;
+        }
+        
+        .search-container button {
+            padding: 8px 15px;
+            background-color: hsl(261, 42%, 35%);
+            border: 2px solid hsl(261, 42%, 35%);
+            border-radius: 0 20px 20px 0; 
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Estilos da Categoria */
+        .category-header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #0f3460;
+            border-bottom: 3px solid #12a125;
+        }
+        
+        .category-header h1 {
+            color: #12a125;
+            font-size: 2.5em;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .creature-card {
+            background-color: #16213e;
+            border: 1px solid hsl(261, 42%, 35%);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            gap: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            flex-wrap: wrap;
+        }
+
+        .creature-image {
+            flex: 1;
+            min-width: 250px;
+            height: 250px;
+            background-color: #0f3460;
+            border-radius: 8px;
+            background-size: cover;
+            background-position: center;
+            border: 1px solid #1a1a2e;
+        }
+
+        .creature-info {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .creature-info h2 {
+            color: lab(44.23% 68.18 -58.68);
+            margin-top: 0;
+            border-bottom: 1px solid hsl(261, 42%, 35%);
+            padding-bottom: 10px;
+        }
+
+        footer {
+            background-color: #16213e;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #773d99;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-links">
+            <a href="inicio.html">Início</a>
+            <a href="novidades.html">Novidades</a>
+            <a href="regras.html">Regras</a>
+            <a href="videos.html">Vídeos</a>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Pesquisar na Wiki...">
+            <button type="button">🔍</button>
+        </div>
+    </nav>
+
+    <header class="category-header">
+        <h1>Entidades Etéreas</h1>
+        <p>Seres sem corpo, feitos de fumaça, sombra e memórias. Onde o físico termina, eles começam.</p>
+    </header>
+
+    <main class="container">
+        
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSER6rzHMEN8yeLQPcMW0-Pk5JVYcLIiaoZg7gR4D32mkqCYSpLDg7tY_c&s=10);"></div>
+            <div class="creature-info">
+                <h2>Anjana</h2>
+                <p><strong>Origem:</strong> Espanha (Mitologia Cântabra).</p>
+                <p>Espíritos feéricos bondosos e puros da floresta. Elas são descritas como seres luminosos que protegem os bosques, curam animais feridos e guiam viajantes que se perdem nas montanhas.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ52H_-TEpfxNxM_LD0jxwC3fFK6-34xro9mz0fTdiuZBe2HVrbKuHrbzdZC5B);"></div>
+            <div class="creature-info">
+                <h2>Ankou</h2>
+                <p><strong>Origem:</strong> França (Folclore Bretão).</p>
+                <p>O sombrio guardião dos cemitérios. Ele é um espírito alto e esguio que conduz uma carroça rangente. Sua função é recolher as almas e guiá-las em segurança para o outro lado.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyE84BlF4e4JmiloGghVL7sn-rolOy9ZAYmI_6oMGSJw&s=10);"></div>
+            <div class="creature-info">
+                <h2>Banshee</h2>
+                <p><strong>Origem:</strong> Irlanda.</p>
+                <p>Um espírito feminino cujo lamento agudo ecoa pelos vales. Seu choro é um presságio melancólico que anuncia a passagem iminente de alguém ligado às antigas linhagens da Irlanda.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAoEJNe8XrEhgWurdcgIxkFA0SRR9eY2HOn7Bz0T5uRg_GBESz16ARYHI&s=10);"></div>
+            <div class="creature-info">
+                <h2>Barghest</h2>
+                <p><strong>Origem:</strong> Inglaterra.</p>
+                <p>Um cão fantasma gigantesco de pelagem negra. Ele não deixa pegadas e seus olhos brilham como brasas na névoa, assombrando vielas e ruas de cidades históricas durante a noite.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRB_LUEUUYSLktssJTRTNTYRcNiZu-BGPNkP15uj6_epViKnIVIhaxBwnftR6DZ);"></div>
+            <div class="creature-info">
+                <h2>Boggart</h2>
+                <p><strong>Origem:</strong> Folclore Britânico.</p>
+                <p>Um espírito doméstico travesso que se esconde em armários. Adora pregar peças inofensivas, como bater portas ou esconder objetos, alimentando-se da pequena confusão gerada na casa.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVa8mqeFMIiHuzKYX65pCkXJPADoqwP7-ov3SrlXm86NG57BKftaxvW6-CSxOn);"></div>
+            <div class="creature-info">
+                <h2>Cadejo</h2>
+                <p><strong>Origem:</strong> América Central.</p>
+                <p>Espíritos em forma de grandes cães que acompanham viajantes. O branco é um guardião benevolente, enquanto o negro é uma entidade caótica que tenta desorientar quem caminha sozinho.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0SDyzGCYA4iS4zsCXOrjeW11wS6ixMjGqwzsgu8I_qa1-8JnwUZfhsSkgMDh6);"></div>
+            <div class="creature-info">
+                <h2>Dullahan</h2>
+                <p><strong>Origem:</strong> Irlanda.</p>
+                <p>O cavaleiro sem cabeça da mitologia irlandesa. Ele carrega sua própria cabeça sob o braço e cavalga um cavalo negro. Quando ele para e chama um nome, a transição espiritual ocorre.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNrYJk-0RLgxo77aKAGMn__C9JiaR25Bu9QlyzC9PH0Nh1RHIr3Oz06jMDDVic);"></div>
+            <div class="creature-info">
+                <h2>Dybbuk</h2>
+                <p><strong>Origem:</strong> Mitologia Judaica.</p>
+                <p>Uma alma inquieta que se recusa a deixar o mundo físico. Costuma se abrigar em objetos antigos, como caixas de madeira, aguardando rituais para encontrar finalmente o seu descanso.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQI2RLnqYCespBnUqMU8CgLL2I4SDxvRyOq3nP04hSf2dWqF96zKYdRR95sBEOs);"></div>
+            <div class="creature-info">
+                <h2>Eidolon</h2>
+                <p><strong>Origem:</strong> Mitologia Grega.</p>
+                <p>Uma imagem fantasmagórica ou duplo astral. Na Grécia Antiga, era visto como a "sombra" da alma humana que habitava o submundo após o fim da vida biológica.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRicKO9QDKevFeqODJEzNoO3Jnp8wBDcLNC7tiTQVq7-d6ROvxyncD4Tu9urgct);"></div>
+            <div class="creature-info">
+                <h2>Fogo-Fátuo</h2>
+                <p><strong>Origem:</strong> Folclore Europeu.</p>
+                <p>Luzes flutuantes azuladas vistas em pântanos. Muitas lendas os descrevem como espíritos elementais tentando atrair os curiosos para caminhos desconhecidos na escuridão.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWeFL3N96mo3RfwN8KdzXPMQOLX1FskSPE08wzcaLeymG1vI6QPnVmX5u2HdP2);"></div>
+            <div class="creature-info">
+                <h2>Fylgja</h2>
+                <p><strong>Origem:</strong> Mitologia Nórdica.</p>
+                <p>Um espírito guardião invisível que reflete a alma de uma pessoa. Geralmente assume forma animal e serve como uma proteção espiritual vista apenas em sonhos ou presságios.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5H0N3TkDt1yeJM0tERKhkL58g5QxW13vaWcAXRS2Qww&s=10);"></div>
+            <div class="creature-info">
+                <h2>Gwyllion</h2>
+                <p><strong>Origem:</strong> País de Gales.</p>
+                <p>Espíritos femininos que espreitam entre rochas em dias nublados. Gostam de desorientar pastores, mas podem ser apaziguadas com pequenas oferendas de comida pelo caminho.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSP4KjvxAbY8nPLsyrg9uSzArD8jymAUMkFBPoScUS7SyKiNRgMCDNACkk50EJw);"></div>
+            <div class="creature-info">
+                <h2>Huldra</h2>
+                <p><strong>Origem:</strong> Escandinávia.</p>
+                <p>Um espírito da floresta com aparência de mulher bonita, mas que esconde uma cauda de vaca ou raposa. São as protetoras poderosas dos bosques e da vida selvagem.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyMsMXQTd8UkhOTtYMZGSr4-9mOH9m4bJbQ_aE1lsmnmgjPQRsdJF_KrbM3nn3);"></div>
+            <div class="creature-info">
+                <h2>Ifrit</h2>
+                <p><strong>Origem:</strong> Mitologia Árabe.</p>
+                <p>Espíritos poderosos ligados ao fogo e à fumaça. Habitam ruínas antigas e desertos profundos, sendo conhecidos por sua astúcia e força mágica gigantesca.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://darkside.blog.br/wp-content/uploads/2025/12/djinn-1.jpg);"></div>
+            <div class="creature-info">
+                <h2>Jinn (Gênios)</h2>
+                <p><strong>Origem:</strong> Mitologia Islâmica.</p>
+                <p>Seres de um plano paralelo feitos de "fogo sem fumaça". Possuem livre-arbítrio, podem mudar de forma e ficar invisíveis, manipulando os elementos naturais conforme desejam.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSStHwlX2qgG6qR3Rz1bg8I-OQPrxfHTbCcLyqQHKHy1V5X4p-afGqTt9AIoP_6);"></div>
+            <div class="creature-info">
+                <h2>Kitsune</h2>
+                <p><strong>Origem:</strong> Japão.</p>
+                <p>Espíritos de raposas com várias caudas e grande sabedoria. Podem criar ilusões complexas, gerar fogo espiritual e assumir forma humana para interagir com o mundo mortal.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTamqzExTCWk1vCJaoWFRdn4m0J4q8pI6dmhl-KFqn_B7r6d9EubftuACY7SQYA);"></div>
+            <div class="creature-info">
+                <h2>La Llorona</h2>
+                <p><strong>Origem:</strong> México.</p>
+                <p>O espírito de uma mulher que chora nas margens dos rios. Ela lamenta a perda de seus filhos e serve como um aviso sombrio para que crianças não fiquem sozinhas na beira da água.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ98TfwHN9U5AAyRU6HpqZApP8MQ5kcwtHYlRGQKf-64taHYBNm8FZItdEXqwEq);"></div>
+            <div class="creature-info">
+                <h2>Lemures</h2>
+                <p><strong>Origem:</strong> Roma Antiga.</p>
+                <p>Espíritos inquietos que não receberam funerais adequados. Os romanos realizavam rituais com feijões pretos para apaziguar essas sombras e evitar que elas assombrassem as casas.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIo-frEMc6E-5t_RRWc8auzUHfDu9Ey98i2XkBFWub6O22H3o4AFTxKf2-juNf);"></div>
+            <div class="creature-info">
+                <h2>Mare</h2>
+                <p><strong>Origem:</strong> Folclore Germânico.</p>
+                <p>Entidade etérea que senta no peito das pessoas durante o sono, causando pesadelos e falta de ar. É a origem folclórica da palavra "nightmare".</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWMdzbsom-8hcNjGHHuR3JoJWwwm9Hk0_cN1vF1l44Bw&s=10);"></div>
+            <div class="creature-info">
+                <h2>Mula Sem Cabeça</h2>
+                <p><strong>Origem:</strong> Brasil.</p>
+                <p>Espírito amaldiçoado em forma de mula com chamas no lugar da cabeça. Galopa velozmente pelas noites de quinta para sexta-feira, assustando quem cruza seu caminho nas matas.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmQs0mrcg_1IKmhq8mx5CHDOmTSPSvfrMpyFtCNh_zTTYpEi0Bx1LkZL8J58eX);"></div>
+            <div class="creature-info">
+                <h2>Noppera-bō</h2>
+                <p><strong>Origem:</strong> Japão.</p>
+                <p>Espírito que se parece com um humano normal até ser encarado de perto, revelando um rosto liso, sem feições. Adora dar sustos inofensivos em viajantes desavisados.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg-8BCBbJag-1hePSHJ7350E6nLGJ113wxOmfOrJhE3A&s=10);"></div>
+            <div class="creature-info">
+                <h2>Onryō</h2>
+                <p><strong>Origem:</strong> Japão.</p>
+                <p>Espíritos vingativos que permanecem na terra devido a sentimentos de injustiça. Sua presença causa frio intenso e interferências elétricas ao seu redor.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpL-v0osuUB1Vp0tvhCgG8pSx9z0CZlFwzppLOhe2Tpz7RquK-LC-GXRm5mcRS);"></div>
+            <div class="creature-info">
+                <h2>Poltergeist</h2>
+                <p><strong>Origem:</strong> Alemanha.</p>
+                <p>O "fantasma barulhento". Manifesta sua energia movendo objetos, acendendo luzes e criando barulhos nas paredes, agindo de forma invisível e caótica.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkoOJmCtLWt0oPkfCySTt6LcpRf02_hmjX1dlgWyfNCLvKTeqUmpKI1AZsbXtI);"></div>
+            <div class="creature-info">
+                <h2>Qareen</h2>
+                <p><strong>Origem:</strong> Mitologia Islâmica.</p>
+                <p>Um duplo espiritual que acompanha cada ser humano. Ele age como uma sombra constante, tentando influenciar a intuição e as ideias da pessoa ao longo da vida.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQStpJd8VAlTZCogzMase7-s9bVFrGuNd0DA_bsKyag&s=10);"></div>
+            <div class="creature-info">
+                <h2>Saci-Pererê</h2>
+                <p><strong>Origem:</strong> Brasil.</p>
+                <p>Espírito travesso das matas com uma perna só e gorro vermelho. Move-se dentro de redemoinhos de vento e adora pregar peças em fazendeiros e viajantes.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDmhEwfXFx_IMUwMIGptGL1Bnqglm1q9ridoO6urvOjebqmQq2s0BFv-jRd6uN);"></div>
+            <div class="creature-info">
+                <h2>Sílfide</h2>
+                <p><strong>Origem:</strong> Folclore Europeu.</p>
+                <p>Elementais do ar feitos de puro vento. São invisíveis e governam as correntes aéreas, as tempestades e os caminhos migratórios das aves.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC_EUN97Wxj1t72NQ8PwBzwNd2l-AOJN0oxh0oaygtcg&s=10);"></div>
+            <div class="creature-info">
+                <h2>Tengu</h2>
+                <p><strong>Origem:</strong> Japão.</p>
+                <p>Espíritos poderosos que protegem as montanhas sagradas. São mestres marciais e podem controlar o clima com seus leques de penas mágicas.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS62_RtbhAhhQX475dQVkw5hHCR_Zy5GUMYBgyLJ8CRmDad1B9zkcpcxI-bU6wz);"></div>
+            <div class="creature-info">
+                <h2>Wraith</h2>
+                <p><strong>Origem:</strong> Escócia.</p>
+                <p>Uma aparição sombria e encapuzada, sem rosto visível. Flutuam silenciosamente perto de ruínas e são vistos como personificações da própria sombra.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThXhePg73UYD8xTW1cPqpUq13lR4L3LfXUDDlWQAdsgFwbOPZWyHGaYk8veykB);"></div>
+            <div class="creature-info">
+                <h2>Yūrei</h2>
+                <p><strong>Origem:</strong> Japão.</p>
+                <p>Almas que ficam presas à terra por sentimentos não resolvidos. Flutuam sem pés e são acompanhadas por pequenas chamas espirituais azuis.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShW5TpSzobX7PRzmOwbfuhSgF9FGncWRIdw9OUv60t2FXbNkyigRIR57rYtGw4);"></div>
+            <div class="creature-info">
+                <h2>Zashiki-warashi</h2>
+                <p><strong>Origem:</strong> Japão.</p>
+                <p>Espírito infantil que habita casas tradicionais. Sua presença traz grande sorte e prosperidade econômica para a família que o abriga com respeito.</p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - O Códice do Inexplicável. A verdade está aqui dentro.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.querySelector('.search-container input');
+            const searchButton = document.querySelector('.search-container button');
+            const cards = document.querySelectorAll('.creature-card');
+
+            function realizarPesquisa() {
+                const termo = searchInput.value.toLowerCase();
+                
+                cards.forEach(card => {
+                    // Pega todo o texto do cartão (nome, origem e descrição)
+                    const textoCartao = card.querySelector('.creature-info').textContent.toLowerCase();
+                    
+                    // Se o texto incluir o termo pesquisado, mostra o cartão, senão, esconde
+                    if (textoCartao.includes(termo)) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            // Pesquisa ao clicar no botão da lupa
+            searchButton.addEventListener('click', realizarPesquisa);
+
+            // Pesquisa em tempo real enquanto o usuário digita
+            searchInput.addEventListener('keyup', realizarPesquisa);
+        });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seres Aquáticos - CrashWiki</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a2e; 
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #16213e;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            flex-wrap: wrap; 
+            gap: 15px;
+        }
+        
+        .nav-links {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            justify-content: center;
+        }
+
+        nav a {
+            color: hsl(261, 42%, 35%); 
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #12a125;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .search-container input {
+            padding: 8px 15px;
+            border: 2px solid hsl(261, 42%, 35%);
+            border-radius: 20px 0 0 20px; 
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+            outline: none;
+        }
+        
+        .search-container button {
+            padding: 8px 15px;
+            background-color: hsl(261, 42%, 35%);
+            border: 2px solid hsl(261, 42%, 35%);
+            border-radius: 0 20px 20px 0; 
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Estilos Específicos da Página da Categoria */
+        .category-header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #0f3460;
+            border-bottom: 3px solid #12a125;
+        }
+        
+        .category-header h1 {
+            color: #12a125;
+            font-size: 2.5em;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .creature-card {
+            background-color: #16213e;
+            border: 1px solid hsl(261, 42%, 35%);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            gap: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            flex-wrap: wrap;
+        }
+
+        .creature-image {
+            flex: 1;
+            min-width: 250px;
+            height: 250px;
+            background-color: #0f3460;
+            border-radius: 8px;
+            background-size: cover;
+            background-position: center;
+            border: 1px solid #1a1a2e;
+        }
+
+        .creature-info {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .creature-info h2 {
+            color: lab(44.23% 68.18 -58.68);
+            margin-top: 0;
+            border-bottom: 1px solid hsl(261, 42%, 35%);
+            padding-bottom: 10px;
+        }
+
+        footer {
+            background-color: #16213e;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #773d99;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-links">
+            <a href="inicio.html">Início</a>
+            <a href="novidades.html">Novidades</a>
+            <a href="regras.html">Regras</a>
+            <a href="videos.html">Vídeos</a>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Pesquisar na Wiki...">
+            <button type="button">🔍</button>
+        </div>
+    </nav>
+
+    <header class="category-header">
+        <h1>Seres Aquáticos</h1>
+        <p>Mais de 80% do oceano é inexplorado. Aqui está o que habita os outros 20%.</p>
+    </header>
+
+    <main class="container">
+        
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhUlMa2CB_CnsFbCxHWE5BHZ95374zA22jWvEyLsQW5GsZnDK_EBtuxlR8&s=10);"></div>
+            <div class="creature-info">
+                <h2>Abaia</h2>
+                <p><strong>Origem:</strong> Melanésia (Ilhas Salomão, Fiji e Vanuatu).</p>
+                <p>Uma enguia mágica e gigantesca que habita o fundo de lagos de água doce. Ela é considerada a protetora feroz de todas as criaturas do lago e, segundo as lendas, pode provocar tempestades e inundações terríveis contra qualquer humano que ouse pescar em suas águas.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN8_UMbnlNM5LBS4afvGD2bDTV5-lKmxLS0Up5PYXMux-5Eom6E0x2vUfu&s=10);"></div>
+            <div class="creature-info">
+                <h2>Ahuizotl</h2>
+                <p><strong>Origem:</strong> Mitologia Asteca (México).</p>
+                <p>Uma criatura anfíbia do tamanho de um cão, com pelos escuros e escorregadios. Sua característica mais bizarra e letal é uma mão humana perfeitamente formada na ponta de sua cauda, que ele usa para agarrar pessoas na beira dos rios e arrastá-las para a morte nas profundezas.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiDwVzLZgKV0fqn8GUzGYv5phO6Vj7BQULPek-IP23bUXUlAjKcY65vHM&s=10);"></div>
+            <div class="creature-info">
+                <h2>Bake-kujira</h2>
+                <p><strong>Origem:</strong> Japão.</p>
+                <p>O "fantasma da baleia". Trata-se de um esqueleto animado e colossal de uma baleia que navega perto da costa japonesa, sempre acompanhado por aves marinhas estranhas e peixes desconhecidos. Diz-se que ele traz uma terrível maldição de fome e doenças para as vilas de pescadores que o avistam.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/140412botocorderosa-4817pm-685016876-jpg.jpeg?w=1900&h=2929);"></div>
+            <div class="creature-info">
+                <h2>Boto Cor-de-Rosa</h2>
+                <p><strong>Origem:</strong> Brasil (Bacia Amazônica).</p>
+                <p>Uma lenda clássica e sedutora dos rios brasileiros. Durante a noite, esse golfinho de água doce se transforma em um homem incrivelmente charmoso, sempre vestindo roupas brancas e um chapéu para esconder seu espiráculo (o buraco de respiração), com o objetivo de encantar e engravidar mulheres em festas ribeirinhas antes de voltar ao rio.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://static.wikia.nocookie.net/mitho/images/b/bf/Charybdis_by_genzoman-d5zcx8d-1-.jpg/revision/latest?cb=20130731170659&path-prefix=pt-br);"></div>
+            <div class="creature-info">
+                <h2>Caríbdis</h2>
+                <p><strong>Origem:</strong> Mitologia Grega.</p>
+                <p>Um monstro marinho outrora humano, amaldiçoado pelos deuses. Ela repousa no fundo de um estreito e ingole imensas quantidades de água do mar três vezes ao dia, criando redemoinhos colossais que devoram frotas inteiras de navios sem deixar rastros.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4PSdgJynpc2fGsrJnVw-9f9Mhu1qEIepfULpjFY1fRQ&s=10);"></div>
+            <div class="creature-info">
+                <h2>Cila (Scylla)</h2>
+                <p><strong>Origem:</strong> Mitologia Grega.</p>
+                <p>Vizinha e contraparte letal de Caríbdis, Cila é uma monstruosidade marinha que habita cavernas costeiras. Possui doze patas pendentes e seis longos pescoços, cada um com uma cabeça grotesca armada com três fileiras de dentes afiados, usados para arrancar marinheiros de seus conveses.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9v1j4b3n87ea0gLy6U0obded2pMipRzFkNEaX0WB5j2i3pdYFdxTrU9A&s=10);"></div>
+            <div class="creature-info">
+                <h2>Drac</h2>
+                <p><strong>Origem:</strong> França (Folclore de Beaucaire).</p>
+                <p>Um demônio da água capaz de mudar de forma, frequentemente assumindo a aparência de anéis flutuantes ou objetos brilhantes para atrair crianças para os rios. Além de se alimentar de vítimas incautas, costuma raptar mulheres jovens para forçá-las a cuidar de seus filhotes submersos.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_ja82cK6U5olVNnfw1znkNftFrTMPaB_kLZLdfVL85w&s=10);"></div>
+            <div class="creature-info">
+                <h2>Each-uisge</h2>
+                <p><strong>Origem:</strong> Escócia (Terras Altas).</p>
+                <p>Um cavalo aquático muito mais implacável que o famoso Kelpie. Ele habita o mar e lagos profundos (lochs). Embora ofereça montaria a viajantes exaustos, assim que entra na água, sua pele se torna adesiva, prendendo a vítima enquanto o monstro a afoga e devora, deixando apenas o fígado boiando.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://64.media.tumblr.com/2652a61bb5d0d41868ae9870c11b4e32/b096400156a244c7-fa/s1280x1920/7f38ed0ee4da5033944614deb3a5a48d5e02a514.jpg);"></div>
+            <div class="creature-info">
+                <h2>Fossegrim</h2>
+                <p><strong>Origem:</strong> Noruega.</p>
+                <p>Um espírito das águas que habita cachoeiras e moinhos. Ele é famoso por sua habilidade inigualável de tocar o violino Hardanger (instrumento tradicional). As lendas dizem que ele pode ensinar sua arte mágica aos humanos, desde que receba oferendas de carne lançadas nas quedas d'água nas noites de quinta-feira.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm_TD9fal0Pkzbfp2KE96oIrdfklU_wxw8ZYFisdTuJQ&s=10);"></div>
+            <div class="creature-info">
+                <h2>Grindylow</h2>
+                <p><strong>Origem:</strong> Inglaterra (Folclore de Yorkshire).</p>
+                <p>Um pequeno demônio esverdeado e repulsivo que vive em pântanos e lagoas rasas. Ele possui dedos anormalmente longos e quebradiços que usa para agarrar os calcanhares de crianças que brincam perto demais da água, puxando-as impiedosamente para o fundo.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4AzwKC0oRAb2u12frf7ZSHU0EJrREjNi3h_5VtD180A&s=10);"></div>
+            <div class="creature-info">
+                <h2>Hidra de Lerna</h2>
+                <p><strong>Origem:</strong> Mitologia Grega.</p>
+                <p>Uma serpente aquática reptiliana de proporções gigantescas, dotada de múltiplas cabeças venenosas. Era uma criatura tão formidável que seu hálito era letal, e para cada cabeça decepada em combate, duas novas nasciam imediatamente em seu lugar.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKBiiDB7ooSw_Q7CMcTb9CG4zbazeMdHui2HgpYm9lSA&s=10);"></div>
+            <div class="creature-info">
+                <h2>Hipocampo</h2>
+                <p><strong>Origem:</strong> Mitologia Fenícia e Grega.</p>
+                <p>O "cavalo marinho" da antiguidade. É descrito possuindo a metade superior de um cavalo nobre e a metade inferior composta pela cauda escamosa de um peixe enorme. Eram frequentemente domesticados pelas divindades dos oceanos, como Poseidon, para puxar suas carruagens sob as ondas.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4RTnY4mxndqSKoCSb4dmB0lQ6u-yztUshw_71Z2OQDw&s=10);"></div>
+            <div class="creature-info">
+                <h2>Iara</h2>
+                <p><strong>Origem:</strong> Brasil (Folclore Tupi-Guarani).</p>
+                <p>A mítica "Mãe das Águas". Uma guerreira indígena de beleza incomparável que, após ser jogada no encontro dos rios, foi transformada em uma sereia pelos peixes. Ela canta melodias hipnotizantes para atrair homens apaixonados para o fundo das águas, de onde nunca mais retornam.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://i.pinimg.com/736x/88/79/a2/8879a21f52082fb753cadf3d0dc1bedb.jpg);"></div>
+            <div class="creature-info">
+                <h2>Isonade</h2>
+                <p><strong>Origem:</strong> Japão (Costa oeste).</p>
+                <p>Um imenso monstro marinho que se assemelha a um tubarão gigante. Sua cauda é coberta por garras curvadas e ganchos de osso. Ele nada furtivamente sob a superfície calma, usando sua cauda armada para fisgar e arrastar marinheiros silenciosamente de seus barcos.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://gitlab.com/uploads/-/system/project/avatar/15497423/jengu.jpg);"></div>
+            <div class="creature-info">
+                <h2>Jengu</h2>
+                <p><strong>Origem:</strong> Camarões (Povo Sawa).</p>
+                <p>Espíritos aquáticos venerados que vivem em rios e litorais, descritos como seres belos, frequentemente semelhantes a sereias com cabelos longos e dentes espaçados. Atuam como intermediárias entre o mundo humano e os deuses, curando doenças e garantindo a boa sorte dos pescadores.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk-gO9rCEU-rj7ZarUSr5z_R8ViUQAH-k-WlrGciUVsw&s=10);"></div>
+            <div class="creature-info">
+                <h2>Jörmungandr</h2>
+                <p><strong>Origem:</strong> Mitologia Nórdica.</p>
+                <p>A colossal Serpente de Midgard, filho do deus Loki. Foi jogada no oceano por Odin e cresceu de forma tão desproporcional que seu corpo dá a volta no globo terrestre inteiro, permitindo que ela morda a própria cauda. Quando ela a soltar, o mar vai transbordar, anunciando o fim do mundo (Ragnarök).</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/af/Kyoka_Hyaku-Monogatari_Kappa.jpg);"></div>
+            <div class="creature-info">
+                <h2>Kappa</h2>
+                <p><strong>Origem:</strong> Japão.</p>
+                <p>Demônios aquáticos com aparência de réptil, casco de tartaruga e um bico de pássaro. Eles possuem uma cavidade no topo da cabeça contendo um líquido vital. Famosos por afogar cavalos e humanos, eles podem ser apaziguados se lhes oferecerem pepinos — sua comida favorita.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRktKt_HiI4eqfMjCTzV1HbcwFAe0IvTk7Hp68ObrhXcQ&s=10);"></div>
+            <div class="creature-info">
+                <h2>Kelpie</h2>
+                <p><strong>Origem:</strong> Escócia.</p>
+                <p>Um espírito metamorfo que assombra lagos e rios solitários, geralmente assumindo a forma de um belo cavalo dócil e molhado. Assim que uma pessoa desavisada sobe em suas costas, ele dispara em direção às profundezas, afogando o cavaleiro imediatamente.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://content.nationalgeographic.pt/medio/import/attachment/edicoesespeciais/cultura/GrandesEnigmas/Kraken/k3.png);"></div>
+            <div class="creature-info">
+                <h2>Kraken</h2>
+                <p><strong>Origem:</strong> Escandinávia.</p>
+                <p>O pesadelo absoluto dos mares nórdicos. Uma criatura cefalópode de proporções tão titânicas que os marinheiros frequentemente o confundiam com uma ilha. Seus tentáculos são capazes de envolver mastros inteiros, puxando até os maiores galeões para o abraço esmagador do abismo.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4n7Rcz4OVzdQqFpbv4u7KOPjwnxNgo3CayBG_Y7BL7g&s=10);"></div>
+            <div class="creature-info">
+                <h2>Leviatã</h2>
+                <p><strong>Origem:</strong> Mitologia Judaico-Cristã.</p>
+                <p>A personificação primordial do caos e dos mares selvagens. Descrito no Velho Testamento como um monstro marinho escamoso e invulnerável que sopra chamas ou faz os oceanos ferverem por onde passa, criado por Deus no princípio dos tempos.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://www.lrarcano.com/wp-content/uploads/2024/06/Lusca-Caio-Sales-1024x731.jpg.webp);"></div>
+            <div class="creature-info">
+                <h2>Lusca</h2>
+                <p><strong>Origem:</strong> Bahamas e Caribe.</p>
+                <p>Uma abominação marinha gigantesca, relatada como sendo a cruza bizarra entre um tubarão feroz e um polvo (ou às vezes com características de uma lula gigante). Ela se esconde nos "Blue Holes" (cavernas submarinas do Caribe), criando fortes correntes para sugar mergulhadores e barcos de pesca.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQZCJ8QTGIIFpM1A8kP1xIN-IJbc52ZjXviB9dD9Dqpg&s=10);"></div>
+            <div class="creature-info">
+                <h2>Makara</h2>
+                <p><strong>Origem:</strong> Mitologia Hindu.</p>
+                <p>Um ser fabuloso que serve como montaria sagrada para divindades ligadas à água, como Ganga e Varuna. Frequentemente esculpida em templos para proteção, ela é uma quimera aquática: possui a parte dianteira de um elefante, crocodilo ou veado, e a parte traseira de um peixe.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyxAcxlyk214ewmUsW_o9NIGlWvuxc0N2kGxQnyuKFNA&s=10);"></div>
+            <div class="creature-info">
+                <h2>Melusina</h2>
+                <p><strong>Origem:</strong> Folclore Europeu (França e Países Baixos).</p>
+                <p>Um espírito da água feminino ligado a fontes sagradas e rios. Ela é retratada como uma bela mulher da cintura para cima, mas com uma cauda de serpente d'água ou de peixe na metade inferior (frequentemente com duas caudas). Famosa por casamentos amaldiçoados com nobres humanos.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFO8ykwI7dX8f4O33j8tV9eGgdMlyDe2M37yhMa2neWA18yd7xum6JYtxvvETC);"></div>
+            <div class="creature-info">
+                <h2>Merrow</h2>
+                <p><strong>Origem:</strong> Irlanda.</p>
+                <p>A versão irlandesa do povo sereia. Enquanto as fêmeas são descritas como de beleza deslumbrante e gentis com humanos, os machos são repulsivos e cruéis. Elas usam um gorro mágico chamado <em>cohuleen druith</em> para conseguirem viver embaixo d'água; se um humano roubar esse gorro, a Merrow não pode voltar ao mar.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_bli-CJqjTl_tzcxq4FBLqPnc9_g1M_NDJFZBXyHRQpz_FR_9hI50DaolWJwu);"></div>
+            <div class="creature-info">
+                <h2>Näkki</h2>
+                <p><strong>Origem:</strong> Finlândia e Estônia.</p>
+                <p>Um espírito vingativo e metamorfo que vive nas águas turvas, debaixo de pontes e em poços fundos. Usa a ilusão para assumir aparências inofensivas, atraindo crianças desobedientes que brincam na beirada para puxá-las pelas pernas.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQExrlVfOgS3aF_8snoXPLre4l37jaPchZg_cwBbP8gbOHKU7HO8BUsqkivpBOS);"></div>
+            <div class="creature-info">
+                <h2>Nuckelavee</h2>
+                <p><strong>Origem:</strong> Ilhas Órcades (Escócia).</p>
+                <p>A criatura mais demoníaca do folclore do Norte. Um ser bizarro e sem pele, lembrando um homem grotesco fundido às costas de um cavalo em decomposição. Ele emerge do mar no escuro para destruir plantações e espalhar pestes venenosas pela terra, tendo aversão completa por água doce.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCT_MF1hFgRi3h86mPHA7kfKE5mVNsbGsu7mh4BEuYPwv_4oz3kMw3FT82Ux2v);"></div>
+            <div class="creature-info">
+                <h2>Qalupalik</h2>
+                <p><strong>Origem:</strong> Mitologia Inuit (Ártico).</p>
+                <p>Seres humanóides escamosos com unhas compridas e roupas de pele de pato. Escondem-se sob o gelo do mar esperando crianças que desobedecem aos pais e chegam muito perto das bordas finas. Elas guardam as vítimas em um grande capuz e as levam para o fundo do mar congelado para criá-las.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeDffVavZ78_nzOOSONaJuEexL2Ch6ga-_BjkNUt9e1l6oVyP60yRhdjkvsxw_);"></div>
+            <div class="creature-info">
+                <h2>Rusalka</h2>
+                <p><strong>Origem:</strong> Mitologia Eslava.</p>
+                <p>Anteriormente espíritos de fertilidade da água, as lendas evoluíram para descrevê-las como fantasmas aquáticos femininos (semelhantes a ninfas) que morreram tragicamente afogadas. Com cabelos úmidos e pálidos, elas cantam à noite para enfeitiçar homens e afogá-los enquanto dançam em águas rasas.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvi5abjsXLXz8AHk7VAjq_Er2850aMDJBEdu8OzLpQBpfiUpj1fWs6vice9ftM);"></div>
+            <div class="creature-info">
+                <h2>Selkie</h2>
+                <p><strong>Origem:</strong> Escócia e Islândia.</p>
+                <p>O melancólico "povo foca". No mar, nadam como focas normais, mas quando chegam às praias desertas, tiram suas peles animais e se transformam em humanos belíssimos. Muitas tragédias românticas nasceram de humanos que escondiam a pele de uma Selkie, obrigando-a a se casar e abandonar o oceano.</p>
+            </div>
+        </article>
+
+        <article class="creature-card">
+            <div class="creature-image" style="background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrNC8-67DKxpK3XwGA5gKJVJ-EWgfigiHjuPQc4gGd2OdFSkY9HBJNdI5Lm40M);"></div>
+            <div class="creature-info">
+                <h2>Umibōzu</h2>
+                <p><strong>Origem:</strong> Japão.</p>
+                <p>Espíritos paranormais massivos que aparecem repentinamente em noites de mar calmo. Retratados como silhuetas negras e carecas surgindo das ondas, eles destroem navios inteiros, seja esmagando o casco com suas mãos gigantescas ou exigindo um barril que eles mesmos enchem de água para afundar a embarcação.</p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - O Códice do Inexplicável. A verdade está aqui dentro.</p>
+    </footer>
+
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.querySelector('.search-container input');
+            const searchButton = document.querySelector('.search-container button');
+            const cards = document.querySelectorAll('.creature-card');
+
+            function realizarPesquisa() {
+                const termo = searchInput.value.toLowerCase();
+                
+                cards.forEach(card => {
+                    // Pega todo o texto do cartão (nome, origem e descrição)
+                    const textoCartao = card.querySelector('.creature-info').textContent.toLowerCase();
+                    
+                    // Se o texto incluir o termo pesquisado, mostra o cartão, senão, esconde
+                    if (textoCartao.includes(termo)) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            // Pesquisa ao clicar no botão da lupa
+            searchButton.addEventListener('click', realizarPesquisa);
+
+            // Pesquisa em tempo real enquanto o usuário digita
+            searchInput.addEventListener('keyup', realizarPesquisa);
+        });
+    </script>
+
+
+    
+</body>
+</html>

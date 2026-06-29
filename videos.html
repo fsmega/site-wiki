@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos - O Códice do Inexplicável</title>
+    <style>
+        /* Estilos básicos para o corpo do site */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a2e; /* Cor escura e misteriosa */
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo do Menu (caso você queira adaptar o seu) */
+        nav {
+            background-color: #16213e;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #7439da; /* Verde místico */
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #18e761;
+        }
+
+        /* Área principal da página */
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #8300ee;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+
+        /* Layout em Grade para os Vídeos */
+        .video-gallery {
+            display: grid;
+            /* Isso faz com que os vídeos se ajustem ao tamanho da tela automaticamente */
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        /* Cartão individual de cada vídeo */
+        .video-card {
+            background-color: #0f3460;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: scale(1.02); /* Efeito de zoom ao passar o mouse */
+        }
+
+        .video-card h3 {
+            margin: 15px 0 5px 0;
+            font-size: 1.2em;
+            color: #fff;
+        }
+
+        .video-card span {
+            font-size: 0.9em;
+            color: #a0a0a0;
+        }
+
+        /* Configuração do iframe do YouTube para ser responsivo */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="inicio.html">Início</a>
+        <a href="novidades.html">Novidades</a>
+        <a href="regras.html">Regras</a>
+        <a href="videos.html">Vídeos</a>
+    </nav>
+
+    <main>
+        <h1>Arquivos Audiovisuais</h1>
+        <p>Aqui temos alguns vídeos super interessantes do YouTube, contando sobre Histórias e até aparições sobra cada categoria apresentada na nossa CrashWiki</p>
+
+        <section class="video-gallery">
+            
+            <div class="video-card">
+                <div class="video-container">
+                    <iframe src= "https://www.youtube.com/embed/mAE1NIBO3wc?si=P5EzVHE3Y9JVH3Fz" allowfullscreen></iframe>
+                </div>
+                <h3>A Lenda Das Sereias</h3>
+                <span>Categoria: Seres Aquáticos</span>
+            </div>
+
+            <div class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/S5X-2k3JhxE?si=ab1ZsPPw-cvAJIyx" allowfullscreen></iframe>
+                </div>
+                <h3>Por que Os Celtas Acreditavam Nas Fadas?</h3>
+                <span>Categoria: Povo da Terra</span>
+            </div>
+
+            <div class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/gT38TeUJ3MA?si=mIk-RgOPBLaN1xFG" allowfullscreen></iframe>
+                </div>
+                <h3>5 Maiores Descobertas Aliens</h3>
+                <span>Categorisa: Extraterrestres</span>
+            </div>
+
+
+                <div class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/S_04-VL-ipg?si=QnKh-DPp42nTuOh5" allowfullscreen></iframe>
+                </div>
+                <h3>Histórias de Fantasmas que vão tirar seu sono</h3>
+                <span>Categoria: Entidades Estéreas</span>
+            </div>
+
+                <div class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/qp_F9xRlf_w?si=AqPhr5hd830o7i6O" allowfullscreen></iframe>
+                </div>
+                <h3>Encontros Assustadores com o Pé Grande</h3>
+                <span>Categoria: Criptídeos e Bestas Urbanas</span>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>
